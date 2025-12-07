@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities */
+@layer components {
+  .sidebar {
+    @apply w-64 bg-white border-r border-gray-200;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors;
+  }
+
+  .nav-item.active {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  .stat-card {
+    @apply bg-white p-6 rounded-xl shadow-sm border-l-4;
+  }
+
+  .info-card {
+    @apply bg-white p-6 rounded-xl shadow-sm transition-transform duration-300 hover:shadow-md;
+  }
+
+  .chart-card {
+    @apply bg-white p-6 rounded-xl shadow-sm;
+  }
+
+  .table-card {
+    @apply bg-white p-6 rounded-xl shadow-sm;
+  }
+
+  .data-table {
+    @apply w-full border-collapse;
+  }
+
+  .data-table th {
+    @apply text-left py-3 px-4 bg-gray-50 text-gray-600 font-medium border-b;
+  }
+
+  .data-table td {
+    @apply py-3 px-4 border-b text-gray-700;
+  }
+
+  .data-table tr:hover {
+    @apply bg-gray-50;
+  }
+
+  .status-badge {
+    @apply px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .status-green {
+    @apply bg-green-50 text-green-600;
+  }
+
+  .status-blue {
+    @apply bg-blue-50 text-blue-600;
+  }
+
+  .status-orange {
+    @apply bg-orange-50 text-orange-600;
+  }
+
+  .status-red {
+    @apply bg-red-50 text-red-600;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors;
+  }
+
+  .filter-select {
+    @apply border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-700;
+  }
+}
